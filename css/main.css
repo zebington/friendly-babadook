@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@keyframes hop {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+#title {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#the-babadook {
+    position: fixed;
+    left: -200px;
+    bottom: -5vh;
+    transition: left 1s ease-in-out;
+}
+
+.hop {
+    animation-name: hop;
+    animation-duration: 500ms;
+    animation-iteration-count: 2;
+}
